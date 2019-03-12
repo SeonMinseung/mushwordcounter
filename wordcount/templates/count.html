@@ -1,0 +1,14 @@
+<h1>your text contains [ {{ total }} ]this many words.</h1>
+
+<a href="/">Try Again</a>
+
+<h1>inserted text:</h1>
+
+{{ fulltext }}
+
+<h1>Word count:</h1>
+
+{% for word, countTotal in dictionary %}
+{{ word }} - {{ countTotal }}
+<br />
+{%endfor%}
